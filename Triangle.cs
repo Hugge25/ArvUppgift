@@ -10,12 +10,12 @@ namespace ArvUppgift
         }
         public int Area()
         {
-            int area = (width*height);
+            int area = (width*height)/2;
             return area;
         }
         public int Circumferance()
         {
-            int c = (int)Math.Sqrt(width^2 + height^2);
+            int c = (int)Math.Sqrt(Math.Pow(width,2) + Math.Pow(height, 2));
             int circ = width+height+c;
             return circ;
         }
