@@ -26,6 +26,7 @@ TG("Hej, vad vill du ha för form? 1 eller 2");
 Console.WriteLine("1. Rektangle");
 Thread.Sleep(500);
 Console.WriteLine("2. Triangle");
+Console.WriteLine("3. Stäng av programmet");
 string Num = Console.ReadLine();
 while(Num != "3")
 {
@@ -56,7 +57,7 @@ while(Num != "3")
             }
             break;
         
-            case "2":
+        case "2":
             Console.WriteLine("Triangle");
             TG("Ange den höjd och bredd du vill ha");
             Triangle t = new Triangle(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
